@@ -37,15 +37,13 @@
   background-image: url("../res/about-box.png");
   background-size: cover;
   background-position: center;
-  height: 498.75px;
-  width: 758.125px;
+  height: 40%;
+  width: 80%;
   display: flex;
   top: max(200px, 25vh);
   position: absolute;
   place-items: center;
   flex-direction: column;
-  margin-left: 20%;
-  margin-right: 20%;
   z-index: 0;
   transition: all 500ms;
 }
