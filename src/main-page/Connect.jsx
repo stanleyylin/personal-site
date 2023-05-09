@@ -36,7 +36,7 @@ const Connect = ( { onSave, user = {} }) => {
               placeholder='Name'
               {...register('name')}
             />
-            <div>{errors.name?.message}</div>
+            <div className='error'>{errors.name?.message}</div>
           </div>
 
           <div>
@@ -45,7 +45,7 @@ const Connect = ( { onSave, user = {} }) => {
               placeholder='Email'
               {...register('email')}
             />
-            <div>{errors.email?.message}</div>
+            <div className='error'>{errors.email?.message}</div>
           </div>
           
           <div>
@@ -56,7 +56,7 @@ const Connect = ( { onSave, user = {} }) => {
               rows="14"
               {...register('message')}
             />
-            <div>{errors.message?.message}</div>
+            <div className='error'>{errors.message?.message}</div>
           </div>
           <button className='connect-button' type="submit">Connect</button>
         </form>    
