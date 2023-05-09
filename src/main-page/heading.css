@@ -1,0 +1,164 @@
+.background {
+  background-image: linear-gradient(
+      rgba(173, 45, 45, 0.15),
+      rgba(173, 45, 45, 0.15)
+    ),
+    url("../res/wallpaper.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 1100px;
+  display: grid;
+  place-items: center;
+  animation: scroll 20s linear infinite;
+}
+
+.stanley {
+  height: 250px;
+  width: 250px;
+  margin-left: 50px;
+  margin-bottom: 70px;
+  transition: all 500ms;
+}
+
+@keyframes scroll {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.box {
+  background-image: url("../res/about-box.png");
+  background-size: cover;
+  background-position: center;
+  height: 498.75px;
+  width: 758.125px;
+  display: flex;
+  top: max(200px, 25vh);
+  position: absolute;
+  place-items: center;
+  flex-direction: column;
+  z-index: 0;
+  transition: all 500ms;
+}
+
+.first-row {
+  display: flex;
+  place-items: center;
+  margin-top: 70px;
+  margin-right: 25px;
+  margin-bottom: -10px;
+}
+
+.intro {
+  font-family: "Joystix", monospace;
+  color: #a45050;
+  font-size: 28px;
+  width: 480px;
+  padding-left: 40px;
+  padding-bottom: 60px;
+}
+
+.second-row {
+  display: flex;
+}
+.star {
+  width: 40px;
+  height: 40px;
+  margin-right: 50px;
+}
+.special {
+  font-family: "Joystix", monospace;
+  color: #a45050;
+  order: 2;
+  width: 480px;
+
+  font-size: 18px;
+}
+
+/* BIG */
+@media (min-width: 100em) {
+  .box {
+    height: 623.4375px;
+    width: 947.65625px;
+  }
+
+  .first-row {
+    margin-top: 90px;
+  }
+
+  .stanley {
+    margin-bottom: 90px;
+    width: 275px;
+    height: 275px;
+  }
+
+  .intro {
+    font-size: 32px;
+    width: 500px;
+    padding-left: 80px;
+    padding-bottom: 75px;
+  }
+
+  .special {
+    font-size: 23px;
+    width: 680px;
+  }
+
+  .star {
+    width: 60px;
+    height: 60px;
+    margin-top: -5px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 69em) {
+  .background {
+    animation-duration: 40s;
+  }
+
+  .box {
+    background-image: url("../res/about-box-mobile.png");
+    width: 485.33px;
+    height: 709.33px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .stanley {
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  .first-row {
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .intro {
+    font-size: 25px;
+    width: 350px;
+    padding: 0;
+    padding-bottom: 60px;
+  }
+
+  .special {
+    width: 350px;
+  }
+  .star {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 40em) {
+  .background {
+    animation-duration: 60s;
+  }
+}

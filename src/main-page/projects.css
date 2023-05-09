@@ -1,0 +1,102 @@
+.project-section {
+  background-image: linear-gradient(#e56a5e, #f99987);
+  background-size: cover;
+  background-position: center;
+  display: inline-flex;
+  flex-direction: column;
+
+  min-height: 120vh;
+}
+.choose {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Joystix", monospace;
+  color: white;
+  font-size: 30px;
+  transition: all 500ms;
+}
+.project-head {
+  padding-top: 30px;
+}
+
+.white-line {
+  width: 100vw;
+  background-color: white;
+  height: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.buttons {
+  display: flex;
+}
+div.buttons > img {
+  width: 40px;
+  margin-right: 10px;
+  transition: all 500ms;
+}
+
+.project-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  transition: all 500ms;
+  column-gap: 0px;
+}
+
+.project-thumbnails > div:nth-child(odd) {
+  margin-left: 22%;
+}
+.project-thumbnails > div:nth-child(even) {
+  margin-top: 60px;
+  margin-right: 22%;
+  justify-content: left;
+}
+
+.project-thumbnails > div:hover {
+  transform: translateY(-10px);
+}
+
+div * {
+  transition: inherit;
+}
+
+@media (max-width: 69em) {
+  .project-section {
+    min-height: 270vh;
+  }
+
+  .choose {
+    font-size: 22px;
+  }
+
+  div.buttons > img {
+    width: 30px;
+  }
+
+  .project-thumbnails > div:nth-child(even) {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+  .project-thumbnails > div:nth-child(odd) {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .project-thumbnails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 45em) {
+  .project-section {
+    min-height: 230vh;
+  }
+}

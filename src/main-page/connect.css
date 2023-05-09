@@ -1,0 +1,146 @@
+.last-part {
+  background-image: linear-gradient(
+      rgba(173, 45, 45, 0.55),
+      rgba(173, 45, 45, 0.55)
+    ),
+    url("../res/wallpaper.png");
+  background-color: rgba(255, 255, 255, 0);
+  background-size: cover;
+  background-position: center;
+  height: 770px;
+}
+
+.connect-section {
+  background-color: rgba(255, 255, 255, 0);
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 600px;
+  width: 100%;
+}
+
+.connect-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 20%;
+  margin-bottom: 20%;
+}
+
+.connect-subtitle,
+.connect-title {
+  font-family: "Joystix", monospace;
+  color: white;
+  transition: all 500ms;
+}
+
+.connect-subtitle {
+  font-size: 20px;
+}
+
+.connect-title {
+  font-size: 37px;
+  margin-bottom: 30px;
+}
+
+.connect-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 35%;
+  align-items: center;
+}
+
+.name-input,
+.email-input {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  font-family: "Joystix", monospace;
+  border-radius: 20px;
+  padding-left: 30px;
+}
+.message-input {
+  resize: none;
+  border: 1px solid #ccc;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  font-family: "Joystix", monospace;
+}
+.connect-button {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  font-family: "Joystix", monospace;
+  color: #d24f48;
+  transition: all 500ms;
+}
+
+.connect-button:hover {
+  transform: translateY(-3px);
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.left {
+  font-family: "Joystix", monospace;
+  color: white;
+  font-size: 18px;
+}
+.left p:first-of-type {
+  font-size: 28px;
+}
+
+.linkedin {
+  transition: all 500ms;
+  width: 35px;
+  margin-right: 20px;
+}
+.github {
+  transition: all 500ms;
+  width: 35px;
+}
+
+.line {
+  display: flex;
+  width: 89%;
+  margin-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.github:hover,
+.linkedin:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 69em) {
+  .last-part {
+    height: 1100px;
+  }
+  .connect-section {
+    grid-template-columns: 1fr;
+    height: 950px;
+  }
+
+  .connect-text {
+    margin: 0;
+  }
+
+  .connect-subtitle {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .connect-form {
+    margin: 0;
+    margin-top: -20%;
+  }
+}
