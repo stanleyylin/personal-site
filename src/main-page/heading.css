@@ -8,17 +8,10 @@
   background-position: center;
   height: 100vh;
   min-height: 1100px;
-  display: grid;
+  display: flex;
+  justify-content: center;
   align-items: center;
   animation: scroll 20s linear infinite;
-}
-
-.stanley {
-  height: 250px;
-  width: 250px;
-  margin-left: 50px;
-  margin-bottom: 70px;
-  transition: all 500ms;
 }
 
 @keyframes scroll {
@@ -34,11 +27,7 @@
 }
 
 .box {
-  background-image: url("../res/about-box.png");
-  background-size: cover;
-  background-position: center;
-  height: 40%;
-  width: 80%;
+  background-color: white;
   display: flex;
   top: max(200px, 25vh);
   position: absolute;
@@ -46,6 +35,31 @@
   flex-direction: column;
   z-index: 0;
   transition: all 500ms;
+}
+
+.stanley {
+  height: 200px;
+  width: 200px;
+  margin-left: 100px;
+  margin-bottom: 70px;
+  transition: all 500ms;
+}
+
+.box-line {
+  width: 99%;
+  height: 3px;
+  background-color: #c14540;
+  margin-top: 3px;
+}
+
+.box-center {
+  background-image: linear-gradient(#d76660, #f99987);
+  font-family: "Joystix", monospace;
+  text-align: center;
+  color: white;
+  width: 99%;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .first-row {
@@ -67,6 +81,8 @@
 
 .second-row {
   display: flex;
+  margin-bottom: 50px;
+  margin-left: 40px;
 }
 .star {
   width: 40px;
@@ -76,7 +92,6 @@
 .special {
   font-family: "Joystix", monospace;
   color: #a45050;
-  order: 2;
   width: 480px;
 
   font-size: 18px;
@@ -84,11 +99,6 @@
 
 /* BIG */
 @media (min-width: 100em) {
-  .box {
-    height: 623.4375px;
-    width: 947.65625px;
-  }
-
   .first-row {
     margin-top: 90px;
   }
@@ -108,7 +118,6 @@
 
   .special {
     font-size: 23px;
-    width: 680px;
   }
 
   .star {
@@ -123,15 +132,6 @@
     animation-duration: 40s;
   }
 
-  .box {
-    background-image: url("../res/about-box-mobile.png");
-    width: 485.33px;
-    height: 709.33px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
   .stanley {
     margin: 0;
     padding-bottom: 30px;
@@ -141,24 +141,43 @@
     margin-top: 0px;
     margin-bottom: 20px;
   }
-
-  .intro {
-    font-size: 25px;
-    width: 350px;
-    padding: 0;
-    padding-bottom: 60px;
-  }
-
-  .special {
-    width: 350px;
-  }
-  .star {
-    margin-left: 20px;
-  }
 }
 
 @media (max-width: 40em) {
+  .intro {
+    font-size: 18px;
+  }
   .background {
     animation-duration: 60s;
+  }
+
+  .intro {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .box {
+    width: 80%;
+  }
+
+  .star {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    margin-left: -20px;
+    margin-right: 10px;
+  }
+
+  .background {
+    min-height: 900px;
+  }
+
+  .first-row {
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+  .special {
+    width: 90%;
+    font-size: 12px;
   }
 }

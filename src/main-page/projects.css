@@ -4,7 +4,7 @@
   background-position: center;
   display: inline-flex;
   flex-direction: column;
-
+  max-width: 100%;
   min-height: 120vh;
 }
 .choose {
@@ -88,9 +88,8 @@ div * {
   }
 
   .project-thumbnails {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
   }
 }
@@ -98,5 +97,14 @@ div * {
 @media (max-width: 45em) {
   .project-section {
     min-height: 230vh;
+  }
+
+  .project-thumbnails > div:nth-child(even) {
+    margin-top: 40px;
+    margin-right: 0;
+  }
+  .project-thumbnails > div:nth-child(odd) {
+    margin-top: 40px;
+    margin-left: 0;
   }
 }

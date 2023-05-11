@@ -30,7 +30,7 @@ const Connect = ( { onSave, user = {} }) => {
           </div>
 
         <form className="connect-form" onSubmit={handleSubmit(handleSave)}>
-          <div>
+          <div className='name-div'>
             <input
               className='name-input'
               placeholder='Name'
@@ -39,7 +39,7 @@ const Connect = ( { onSave, user = {} }) => {
             <div className='error'>{errors.name?.message}</div>
           </div>
 
-          <div>
+          <div className='email-div'>
             <input
               className='email-input'
               placeholder='Email'
@@ -48,7 +48,7 @@ const Connect = ( { onSave, user = {} }) => {
             <div className='error'>{errors.email?.message}</div>
           </div>
           
-          <div>
+          <div className='message-div'>
             <textarea
               className='message-input'
               placeholder='Message'

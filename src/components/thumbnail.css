@@ -2,8 +2,7 @@
 .project-title,
 .top-title-bar,
 .bottom-title-bar {
-  max-width: 800px;
-  min-width: 400px;
+  max-width: 950px;
 }
 
 .project-photo {
@@ -16,17 +15,17 @@
   margin-top: 20px;
   font-family: "Joystix", monospace;
   color: white;
-  font-size: 30px;
+  font-size: 27px;
   text-align: center;
   margin-bottom: -90px;
 }
 
 .project-container {
-  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5%;
 }
 
 .top-title-bar {
@@ -69,6 +68,14 @@
   .project-title,
   .top-title-bar,
   .bottom-title-bar {
-    max-width: 700px;
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 40em) {
+  .project-title {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: -40px;
   }
 }

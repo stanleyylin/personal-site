@@ -106,3 +106,23 @@ div * {
     align-items: center;
   }
 }
+
+@media (max-width: 45em) {
+  .experience-pdf {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .x {
+    width: 25px;
+    margin-left: 10px;
+  }
+
+  .moon {
+    display: none;
+  }
+
+  .experiences-title {
+    height: 50px;
+  }
+}

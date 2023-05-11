@@ -69,6 +69,14 @@
   border-radius: 30px;
   font-family: "Joystix", monospace;
 }
+.message-div,
+.name-div,
+.email-div {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
 .connect-button {
   width: 120px;
   height: 40px;
@@ -151,5 +159,41 @@
   .connect-form {
     margin: 0;
     margin-top: -20%;
+  }
+}
+
+@media (max-width: 45em) {
+  .message-input {
+    width: 70vw;
+  }
+  .email-input {
+    width: 80vw;
+  }
+  .name-input {
+    width: 80vw;
+  }
+  .left p:first-child {
+    font-size: 18px;
+  }
+  .left p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .linkedin {
+    width: 6vw;
+    margin-right: 3px;
+  }
+  .github {
+    width: 6vw;
+  }
+
+  .connect-title {
+    font-size: 25px;
+  }
+  .connect-subtitle {
+    font-size: 16px;
+  }
+  .connect-text {
+    margin-bottom: -60px;
   }
 }
