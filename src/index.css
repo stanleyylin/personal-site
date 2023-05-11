@@ -1,6 +1,11 @@
 @font-face {
   font-family: "joystix";
-  src: local("joystix"), url(./res/joystix.otf) format("otf");
+  src: local("joystix"), url(../public/joystix.otf), format("otf");
+}
+
+@font-face {
+  font-family: "joystix";
+  src: local("joystix"), url(../public/joystix.ttf), format("ttf");
 }
 
 html,
