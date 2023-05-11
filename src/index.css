@@ -1,7 +1,7 @@
 @font-face {
   font-family: "joystix";
-  src: url(../public/fonts/joystix.otf) format("otf"),
-    url(../public/fonts/joystix.ttf) format("ttf");
+  src: url(../public/fonts/joystix.otf) format("opentype"),
+    url(../public/fonts/joystix.ttf) format("truetype");
 }
 
 html,
