@@ -35,6 +35,7 @@
   background-color: white;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  margin-bottom: -5px;
 }
 .bottom-title-bar {
   position: relative;
@@ -46,6 +47,7 @@
   align-items: center;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  margin-top: -5px;
 }
 
 .music-buttons {
