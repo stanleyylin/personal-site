@@ -11,11 +11,11 @@ function Header() {
         <div className='box-center'>about_me.png</div>
         <div className='box-line'></div>
         <div className='first-row'>
-          <img src={me} className='stanley'/>
+          <img src={me} className='stanley' alt='Stanley Lin'/>
           <p className='intro'>HI. I'M <span className='emphasis'>STANLEY</span>.<br/>I'M A PASSIONATE SOFTWARE DEVELOPER.</p>
         </div>
         <div className='second-row'>
-          <img src={star} className='star'/>
+          <img src={star} className='star' alt='star icon'/>
           <p className='special'>Currently, I'm a Computer Science Student at the University of Waterloo!</p>
         </div>
       </div>

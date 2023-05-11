@@ -19,9 +19,9 @@ const Projects = () => {
             CHOOSE YOUR PROJECT...
           </p>
           <div className='buttons'>
-            <img src={deco1}/>
-            <img src={deco2}/>
-            <img src={deco3}/>
+            <img src={deco1} alt=''/>
+            <img src={deco2} alt=''/>
+            <img src={deco3} alt=''/>
           </div>
         </div>
         <div className='white-line'>
