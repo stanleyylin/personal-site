@@ -7,6 +7,7 @@ import Thumbnail from '../components/Thumbnail';
 import Miso from '../res/misotn.png';
 import Pokemon from '../res/pokemon.png';
 import Fridge from '../res/fridgesmart.png';
+import Penguin from '../res/penguin.png';
 const Projects = () => {
 
   return (
@@ -32,7 +33,7 @@ const Projects = () => {
         <Thumbnail name="Miso: UofTHacks Winner" image={Miso} />
         <Thumbnail name="Pokemon" image={Pokemon} />
         <Thumbnail name="FridgeSmart: DeltaHacks" image={Fridge} />
-        <Thumbnail name="Miso: UofT Hacks Winner" image={Miso} />
+        <Thumbnail name="Club Penguin: Java Edition" image={Penguin} />
 
 
       </div>

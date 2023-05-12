@@ -10,10 +10,12 @@
 .logo {
   margin: 2.5rem;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
+  transition: all 500ms;
 }
 
 .logo:hover {
   filter: brightness(1.1) drop-shadow(3px 3px 1px rgb(83, 12, 12, 1));
+  transform: scale(1.03);
 }
 
 .primary-navigation {

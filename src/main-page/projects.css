@@ -108,3 +108,9 @@ div * {
     margin-left: 0;
   }
 }
+
+@media (max-width: 35em) {
+  .project-section {
+    min-height: 130vh;
+  }
+}
