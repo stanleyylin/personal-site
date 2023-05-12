@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { string, z }  from "zod";
@@ -13,13 +13,17 @@ const schema = z.object({
 });
 
 const Connect = ( { onSave, user = {} }) => {
-  const { register, handleSubmit, formState } = useForm({ resolver: zodResolver(schema) });
+  const { register, handleSubmit, formState, reset } = useForm({ resolver: zodResolver(schema) });
 
   const { errors } = formState;
 
   const handleSave = (formValues) => {
     onSave(formValues);
+    reset();
+    setSuccessMessage('Message submitted!');
   }
+
+  const [successMessage, setSuccessMessage] = useState('');
 
   return (
     <div className='last-part'>
@@ -59,6 +63,7 @@ const Connect = ( { onSave, user = {} }) => {
             <div className='error'>{errors.message?.message}</div>
           </div>
           <button className='connect-button' type="submit">Connect</button>
+          <p className='success'>{successMessage && <p>{successMessage}</p>}</p>
         </form>    
       </main>
 

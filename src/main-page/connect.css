@@ -75,6 +75,7 @@
   display: flex;
   justify-content: center;
   margin: 0;
+  flex-direction: column;
 }
 
 .connect-button {
@@ -132,10 +133,19 @@
 .error {
   margin-top: -15px;
   margin-bottom: 5px;
-  font-family: helvetica;
   color: white;
-  font-size: 20px;
+  font-size: 12px;
   text-align: center;
+  font-family: "Joystix", monospace;
+}
+
+.success {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Joystix", monospace;
+  margin-top: 10px;
+  transition: all 500ms;
 }
 
 @media (max-width: 69em) {

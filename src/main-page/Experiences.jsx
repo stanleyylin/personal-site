@@ -12,9 +12,9 @@ const Experiences = () => {
   return (
     <main className='experience-section'>
       <div className='experiences-title'>
-        <img src={deco3} className='x' />
+        <img src={deco3} className='x' alt=''/>
         <div className='file-title'>
-          <img src={moon} className='moon' />
+          <img src={moon} className='moon' alt=''/>
           <p className='experience-pdf'>EXPERIENCE.PDF</p>
         </div>
       </div>
