@@ -8,16 +8,18 @@ import './thumbnail.css';
 const Thumbnail = (props) => {
   return (
     <div className='project-container'>
-      <div className="top-title-bar">
-        <img src={nope} className='close'/>
-      </div>
-      <img className='project-photo' src={props.image} alt={props.name}/>
-      <div className="bottom-title-bar">
-        <img src={prev} className="music-buttons"/>
-        <img src={play} className="music-buttons"/>
-        <img src={next} className="music-buttons"/>
-      </div>
-      <p className='project-title' >{props.name}</p>
+      <a href={props.link} target="_blank" rel="noopener noreferrer">
+        <div className="top-title-bar">
+          <img src={nope} className='close' alt=''/>
+        </div>
+        <img className='project-photo' src={props.image} alt={props.name}/>
+        <div className="bottom-title-bar">
+          <img src={prev} className="music-buttons" alt=''/>
+          <img src={play} className="music-buttons" alt=''/>
+          <img src={next} className="music-buttons" alt=''/>
+        </div>
+        <p className='project-title' >{props.name}</p>
+      </a>
     </div>
   )
 };

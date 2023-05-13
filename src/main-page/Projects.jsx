@@ -30,10 +30,10 @@ const Projects = () => {
       </div>
 
       <div className='project-thumbnails'>
-        <Thumbnail name="Miso: UofTHacks Winner" image={Miso} />
-        <Thumbnail name="Pokemon" image={Pokemon} />
-        <Thumbnail name="FridgeSmart: DeltaHacks" image={Fridge} />
-        <Thumbnail name="Club Penguin: Java Edition" image={Penguin} />
+        <Thumbnail name="Miso: UofTHacks Winner" image={Miso} link="https://github.com/stanleyylin/Miso"/>
+        <Thumbnail name="Pokemon" image={Pokemon} link="https://github.com/stanleyylin/Pokemon"/>
+        <Thumbnail name="FridgeSmart: DeltaHacks" image={Fridge} link="https://github.com/stanleyylin/FridgeSmart" />
+        <Thumbnail name="Club Penguin: Java Edition" image={Penguin} link="https://youtu.be/HD7aCDYnriQ"/>
 
 
       </div>

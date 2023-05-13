@@ -76,10 +76,10 @@ const Connect = ( { onSave, user = {} }) => {
             <p>stanleylin82@gmail.com</p>
           </div>
           <div className='right'>
-            <a href="https://www.linkedin.com/in/stanleylinuw" rel="noopener">
+            <a href="https://www.linkedin.com/in/stanleylinuw" target="_blank" rel="noopener noreferrer">
               <img className="linkedin" src={linkedin} alt="my linkedin" />
             </a>
-            <a href="https://github.com/stanleyylin" rel="noopener">
+            <a href="https://github.com/stanleyylin" target="_blank" rel="noopener noreferrer">
               <img className="github" src={github} alt="my github"/>
             </a>
           </div>
