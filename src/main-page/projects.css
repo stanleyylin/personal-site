@@ -5,7 +5,6 @@
   display: inline-flex;
   flex-direction: column;
   max-width: 100%;
-  min-height: 120vh;
   margin-bottom: -5px;
 }
 .choose {
@@ -67,10 +66,6 @@ div * {
 }
 
 @media (max-width: 69em) {
-  .project-section {
-    min-height: 270vh;
-  }
-
   .choose {
     font-size: 22px;
   }
@@ -96,10 +91,6 @@ div * {
 }
 
 @media (max-width: 45em) {
-  .project-section {
-    min-height: 230vh;
-  }
-
   .project-thumbnails > div:nth-child(even) {
     margin-top: 40px;
     margin-right: 0;
@@ -107,11 +98,5 @@ div * {
   .project-thumbnails > div:nth-child(odd) {
     margin-top: 40px;
     margin-left: 0;
-  }
-}
-
-@media (max-width: 35em) {
-  .project-section {
-    min-height: 130vh;
   }
 }
