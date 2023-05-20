@@ -86,6 +86,7 @@
   font-family: "Joystix", monospace;
   color: #d24f48;
   transition: all 500ms;
+  cursor: pointer;
 }
 
 .connect-button:hover {

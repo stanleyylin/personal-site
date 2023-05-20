@@ -28,11 +28,13 @@
 
 .primary-navigation li {
   width: 200px;
+  cursor: pointer;
 }
 
 .primary-navigation li img {
   min-width: 200px;
   width: 30%;
+  cursor: pointer;
 }
 
 .primary-navigation li img:hover {
