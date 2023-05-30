@@ -12,7 +12,7 @@ function Header() {
         <div className='box-line'></div>
         <div className='first-row'>
           <img src={me} className='stanley' alt='Stanley Lin'/>
-          <p className='intro'>HI. I'M <span className='emphasis'>STANLEY</span>.<br/>I'M A PASSIONATE <span className='emphasis'>SOFTWARE DEVELOPER</span>.</p>
+          <h1 className='intro'>HI. I'M <span className='emphasis'>STANLEY</span>.<br/>I'M A PASSIONATE <span className='emphasis'>SOFTWARE DEVELOPER</span>.</h1>
         </div>
         <div className='second-row'>
           <img src={star} className='star' alt='star icon'/>
