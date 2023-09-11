@@ -5,5 +5,7 @@ A collection of just some of my favourite projects, my cool experiences, and a p
 
 I hope to change the theme every couple of months!
 
-Built with 
+# Built with 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
+Working on integrating a database.
