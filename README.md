@@ -8,4 +8,4 @@ I hope to change the theme every couple of months!
 # Built with 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-Working on integrating a database.
+Working on integrating a database for the form!
